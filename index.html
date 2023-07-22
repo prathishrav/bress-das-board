@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+
+    <div class="main">
+
+
+        <div class="main1">
+
+            <div class="bress">
+                <i class="fa-regular fa-snowflake snow snow"></i>
+                <div id="borderbottom"></div>
+                <P class="bp"> BRESS </P>
+            </div>
+            <div class="main2">
+                <div class="box" onclick="selectDiv(this)" id="box">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                    <p>Dashboard</p>
+                </div>
+                <div onclick="selectDiv(this)" class="box">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <p>Projects</p>
+                </div>
+                <div onclick="selectDiv(this)" class="box">
+                    <i class="fa-solid fa-list-check"></i>
+                    <p>Task list</p>
+                </div>
+                <div onclick="selectDiv(this)" class="box">
+                    <i class="fa-brands fa-servicestack"></i>
+                    <p>Service</p>
+                </div>
+                <div onclick="selectDiv(this)" class="box">
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Notication
+                    <p class="noti" id="noti">2</p>
+                    </p>
+
+                </div>
+                <div onclick="selectDiv(this)" class="box">
+                    <i class="fa-solid fa-comments"></i>
+                    <p>Chat</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="main-3">
+            <nav class="section-2">
+                <div class="search">
+                    <div class="searchs">
+                        <div><input type="text" value="Search"></div>
+                        <div class="iconglass"> <i id="glass" class="fa-solid fa-magnifying-glass "></i></div>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="box-select">
+                        <select class="form-control">
+                          <option>March monday 3rd</option>
+                          <option>March monday 2nd</option>
+                          <option>March monday 1st</option>
+                        </select>
+                      </div>
+                      
+          
+                      
+
+                </div>
+
+
+
+
+                <div class="container">
+                    <div class="switches-container">
+                        <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly" checked="checked" />
+                        <input type="radio" id="switchYearly" name="switchPlan" value="Yearly" />
+                        <label for="switchMonthly"> <i class="fa-regular fa-hard-drive card"></i>Card</label>
+                        <label for="switchYearly"> <i class="fa-solid fa-list card"></i>List</label>
+                        <div class="switch-wrapper">
+                            <div class="switch">
+                                <div> <i class="fa-regular fa-hard-drive card"></i> Card</div>
+                                <div> <i class="fa-solid fa-list card"></i>List</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </nav>
+            <div class="section-3">
+                <div class="task">
+                    <div class="task1">Last Task
+                        <div class="twop">
+                            <p>117,total,
+                            <p>processed to resolve them </p>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="task2">
+                        <div class="num1">10 <p>
+                                Done
+                            </p>
+                        </div>
+                        <div class="task3">20 <p>In progress</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tablebody">
+                    <table class="table1">
+                        <tr  class="tablesec1">
+                            <th>Name</th>
+                            <th>Admin</th>
+                            <th>Members</th>
+                            <th>Status</th>
+                            <th>Run time</th>
+                            <th>Finish date</th>
+                        </tr>
+                        <tr  onclick="selectDivs(this)" class="tablesec3">
+                            <td >ClientOnboarding-Circle </td>
+                            <td> Samantha.j</td>
+                            <td>3</td>
+                            <td>In progress</td>
+                            <td>6 hours</td>
+                            <td>6 mon</td>
+                        </tr>
+                        </tr>
+                        <tr  onclick=" selectDivs(this)" class="tablesec3">
+                            <td>Meeting with webflow & notion </td>
+                            <td>Bob P.</td>
+                            <td>4</td>
+                            <td>Done</td>
+                            <td>2 hours</td>
+                            <td>7 mon</td>
+                        </tr>
+
+                        <tr  onclick="selectDivs(this)" class="tablesec3">
+                            <td>Meeting with webflow & notion </td>
+                            <td>Bob P.</td>
+                            <td>4</td>
+                            <td>Done</td>
+                            <td>2 hours</td>
+                            <td>7 mon</td>
+                        </tr>
+                        <tr  onclick="selectDivs(this)" class="tablesec3">
+                            <td>Meeting with webflow & notion </td>
+                            <td>Bob P.</td>
+                            <td>4</td>
+                            <td>Done</td>
+                            <td>2 hours</td>
+                            <td>7 mon</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div class="section-4">
+                <div class="sec-4">
+                    <div class="date">
+                        <div class="product">Productivity </div>
+                        <div class="second"> 01-07 May<i class="fa-solid fa-angle-down"></i> </div>
+                    </div>
+                    <div class="design">
+                        <div class="design1"><i class="fa-solid fa-circle circle1"></i></i> Research <i
+                                class="fa-solid fa-circle circle2"></i></i> Design</div>
+                        <div class="date1"> date updated every 3 hrs</div>
+
+                    </div>
+                    <div><canvas id="myChart" style="display: block;height: 220px;width: 563px;"
+                            class="chartjs-render-monitor"></canvas></div>
+                </div>
+
+                <div class="section-5">
+                    <div class="project">Project in progress</div>
+
+                    <div class="feedback">
+                        <div class="fb1">
+                            <div>Feed back</div>
+                            <div>Bug</div>
+                            <div>Design System</div>
+                        </div>
+                        <div class="fb2">Improve cards readability
+                            <p>21.02.23</p>
+                        </div>
+                        <div class="image">
+                            <div class="images"> <img src="./assets/prathish.jpg" alt="" class="img1">
+                                <img src="./assets/prathish.jpg" alt="" class="img2">
+                                <img src="./assets/prathish.jpg" alt="" class="img3">
+                            </div>
+                            <div> <i class="fa-regular fa-comment-dots"></i>12 comments</div>
+                            <div> <i class="fa-solid fa-toilet"></i>0 files</div>
+                        </div>
+                    </div>
+
+                    <div class="shadow1"> </div>
+                    <div class="shadow2"></div>
+                    <div class="shadow3"></div>
+
+                    <div><i class="fa-solid fa-chevron-right righta"></i> </div>
+                </div>
+            </div>
+        </div>
+        
+        
+</body>
+
+
+
+<script src="./main.js"></script>
+
+</html>
